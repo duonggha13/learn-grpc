@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package proto;
+
+option go_package = "./;proto";
+service OrderService {
+  // Định nghĩa gRPC service
+  rpc NewOrder(NewRequestOrder) returns (NewResponseOrder) {};
+}
+
+message NewRequestOrder {
+  string orderRequest = 1;
+
+}
+
+message NewResponseOrder {
+  string orderResponse = 2;
+}

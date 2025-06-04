@@ -44,3 +44,12 @@ Learn + Practice gRPC with Go
 
 Nên kết hợp REST và gRPC với gRPC cho nội bộ (internal communicate) và REST cho public API hoặc frontend
 
+
+## Cài đặt protobuf compiler
+Cài với binaries file: https://github.com/protocolbuffers/protobuf/releases
+
+Cài Go plugin cho protocol compiler:
+```bash
+go get -u github.com/golang/protobuf/protoc-gen-go
+go get -u google.golang.org/grpc
+```
